@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,12 @@
     <script src="js/main.js" defer type="module"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <!-- CONTENEDOR MAIN -->
     <main class="container_main">
+
+        <!-- CONTAINER MENU -->
         <nav class="container_menu">
             <section class="title_sect">
                 <h1>CRUD OPERATIONS</h1>
@@ -22,52 +27,96 @@
                 <a href="1" class="option">
                     <img src="storage/img/vectorhome_black.svg">
                     <p>Home</p>
-                </a>        
+                </a>
                 <a href="2" class="option">
                     <img src="storage/img/vectorcourse_black.svg">
                     <p>Course</p>
-    
-                </a>            
+
+                </a>
                 <a href="3" class="option">
                     <img src="storage/img/vectorstudents_black.svg">
                     <p>Students</p>
-    
-                </a>            
+
+                </a>
                 <a href="4" class="option">
                     <img src="storage/img/vectorpayment_black.svg">
                     <p>Payment</p>
-    
-                </a>            
+
+                </a>
                 <a href="5" class="option">
                     <img src="storage/img/vectorreports_black.svg">
                     <p>Report</p>
-    
-                </a>                
+
+                </a>
                 <a href="6" class="option">
                     <img src="storage/img/vectorfilter_black.svg">
                     <p>Settings</p>
-    
-                </a>            
+
+                </a>
             </section>
             <section class="logout_">
                 <p>Logout</p>
                 <img src="storage/img/vectorlagout_black.svg">
             </section>
         </nav>
-        <section class="container_left">
-            <nav class="container_main_search">
-                <div class="div_logo_left"><img src="storage/img/vectorabout_head.svg"></div>
-                <div class="div_logo_rigth">
-                    <div class="container_search">
-                        <input type="text" placeholder="search..." class="input"
-                        style="background: url('storage/img/vectorsearch_head.svg') no-repeat calc(100% - 20px) center;">
+        <section class="section_right">
+            <!-- CONTAINER HEAD -->
+            <section class="container_head">
+                <nav class="container_main_search">
+                    <div class="div_logo_left"><img src="storage/img/vectorabout_head.svg"></div>
+                    <div class="div_logo_rigth">
+                        <div class="container_search">
+                            <input type="text" placeholder="search..." class="input"
+                                style="background: url('storage/img/vectorsearch_head.svg') no-repeat calc(100% - 20px) center;">
+                        </div>
+                        <img src="storage/img/vectornotification_head.svg">
                     </div>
-                    <img src="storage/img/vectornotification_head.svg">
-                </div>
+                </nav>
+            </section>
 
-            </nav>
+            <!-- CONTAINER DASHBOARD -->
+            <section class="container_dashboard">
+                <article class="article_dashboard">
+                    <div class="div_left">
+                        <img src="storage/img/vectorstudents.svg">
+                        <p>Students</p>
+                    </div>
+                    <div class="div_right">
+                        <p>243</p>
+                    </div>
+                </article>
+                <article class="article_dashboard">
+                    <div class="div_left">
+                        <img src="storage/img/vectorcourse.svg">
+                        <p>Course</p>
+                    </div>
+                    <div class="div_right">
+                        <p>13</p>
+                    </div>
+                </article>
+                <article class="article_dashboard">
+                    <div class="div_left">
+                        <img src="storage/img/vectorpayments.svg">
+                        <p>Payments</p>
+                    </div>
+                    <div class="div_right">
+                        <p>556,000</p>
+                    </div>
+                </article>
+                <article class="article_dashboard">
+                    <div class="div_left">
+                        <img src="storage/img/vectorusers.svg">
+                        <p>Users</p>
+                    </div>
+                    <div class="div_right">
+                        <p>3</p>
+                    </div>
+                </article>
+            </section>
         </section>
+
     </main>
-    
+
 </body>
+
 </html>
