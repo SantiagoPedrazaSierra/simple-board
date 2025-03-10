@@ -137,3 +137,53 @@ main{
     }
 }
 
+/* Estilos base del diálogo */
+dialog {
+    width: 350px;
+    height: 125px;
+    margin:  auto;
+    padding: 20px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-family: "Montserrat-SemiBold";
+    font-size: 20px;
+}
+
+/* Estilo para mensajes de éxito */
+dialog.success {
+    background-color: #d4edda;
+
+    color: #155724;
+    border-left: 5px solid #28a745;
+}
+
+/* Estilo para mensajes de error */
+dialog.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-left: 5px solid #dc3545;
+}
+
+/* Estilo para advertencias */
+dialog.warning {
+    background-color: #fff3cd;
+    color: #856404;
+    border-left: 5px solid #ffc107;
+}
+
+/* Botón de cierre */
+#closeDialog {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#closeDialog:hover {
+    background: #555;
+}
