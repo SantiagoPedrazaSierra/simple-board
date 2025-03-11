@@ -15,7 +15,6 @@ main{
 }
 .container_main {
     margin: auto;
-    background: green;
     display: flex;
     flex-direction: column;
     width: 475px;
@@ -31,16 +30,6 @@ main{
     justify-content: space-between;
     align-items: center;
     gap: 43px;
-    h2{
-        font-family: "Montserrat-Bold";
-        font-size: 22px;
-    }
-    p{
-        font-family: "Montserrat-Regular";
-        font-size: 14px;
-        color: var(--color-5);
-    }
-
 
 }
 .title_main{
@@ -57,12 +46,17 @@ main{
     justify-content: center;
     align-items: center;
     gap: 9px;
-    h1{
+    h2{
         font-family: "Montserrat-Bold";
-        font-size: 32px;
-        border-left: 5px solid #F4C430;
-        padding-left: 10px; 
+        font-size: 22px;
     }
+    p{
+        font-family: "Montserrat-Regular";
+        font-size: 14px;
+        color: var(--color-5);
+    }
+
+
 }
 .container_form {
     margin-top: 50px;
@@ -105,11 +99,11 @@ main{
 .password-label {
 }
 .password-input {
-    width: 100%; /* O un ancho específico según el diseño */
-    max-width: 400px; /* Ajusta según necesites */
+    width: 100%;
+    max-width: 400px;
     padding: 12px 16px;
-    border: 1px solid #ddd; /* Borde sutil */
-    border-radius: 4px; /* Bordes redondeados */
+    border: 1px solid #ddd;
+    border-radius: 4px;
     font-size: 16px;
     color: var(--color-2);
     outline: none;
@@ -186,4 +180,56 @@ dialog.warning {
 
 #closeDialog:hover {
     background: #555;
+}
+
+/* Media Queries para diferentes resoluciones */
+
+/* Para móviles pequeños (320px - 480px) */
+@media (max-width: 480px) {
+    .container_main{
+        width: 300px;
+        height: 400px;
+    }
+
+    .container_title{
+        display: flex;
+        gap: 8px;
+        height: 100px;
+    }
+
+    .title_main{
+        h1{
+            font-size: 18px;
+        }
+    }
+
+    .title_second{
+        width: 350px;
+        h2{
+            font-size: 17px;
+        }
+        p{
+            font-size: 10.5px;
+        }
+    }
+
+    .container_form{
+        margin-top: 10px;
+        .div_email{
+            font-size: 12px;
+        }
+        .email-input{
+            font-size: 10px;
+        }
+        .div_password{
+            font-size: 12px;
+        }
+        .password-input{
+            font-size: 10px;
+        }
+    }
+
+    .reset_password{
+        font-size: 11px;
+    }
 }
